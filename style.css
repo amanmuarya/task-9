@@ -183,4 +183,45 @@ vertical-align middle becouse right side our paragraph
     height: 65vh;
     object-fit: cover;
     border-radius: 1.1rem;
+
+        width: 300px;
+            transition: 1s;
+/* hello */
+    animation: orbitSqueeze 4s linear infinite;
+
+}
+
+
+.right-div:hover{
+    transform: scale(1.1) ; 
+    position: absolute;
+
+}
+
+
+
+
+/* Orbit + Squeeze Animation */
+
+@keyframes orbitSqueeze {
+
+    0% {
+        transform: rotate(0deg) translateX(0px) scale(1);
+    }
+
+    25% {
+        transform: rotate(5deg) translateX(40px) scale(1.2, 0.8);
+    }
+
+    50% {
+        transform: rotate(7deg) translateX(70px) scale(1, 1.2);
+    }
+
+    75% {
+        transform: rotate(10deg) translateX(50px) scale(1, 0.9);
+    }
+
+    100% {
+        transform: rotate(20deg) translateX(0px) scale(1);
+    }
 }
